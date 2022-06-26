@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+:root {
+    --font1: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+    --font2: 'Yellowtail', 'cursive';
+    --font3: 'Gloria Hallelujah','cursive';
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--font1);
+}
+body{
+    background-color: rgb(167, 167, 167);
+}
+
+header h1 {
+    padding: 30px 0px 10px 0px;
+    font-family: var(--font3);
+    font-size: 5vw;
+}
+header p {
+    padding-bottom: 20px;
+}
+
+header, footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+
+header p, footer p {
+    /*font-weight: bold;*/
+}
+
+header a,footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+header a:hover,footer a:hover {
+    text-decoration: underline;
+    color: lightgray;
+    
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+}
+
+section {
+    padding: 30vh 0px 30vh 0px;
+   
+}
+
+section p {
+    font-family: var(--font2);
+    font-size: 7vw;
+}
+
+section.normal {
+    background-color: lightgray;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.35);
+}
+section.normal {
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.normal > p {
+    display: inline-block;
+    padding: 40px;
+    margin-left: 15px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.349);  
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.582);
+    border-radius: 5px;
+}
+section#img1 {
+    background-image: url('../imagens/cebola01.jpg');
+    background-position: top center;
+}
+
+section#img2 {
+    background-image: url('../imagens/peixe01.jpeg');
+    background-position: top center;
+}
+
+section#img3 {
+    background-image: url('../imagens/sorriso01.jpg');
+    background-position: top center;
+
+}
+
+footer {
+    margin-top: 30px;
+}
